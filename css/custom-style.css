@@ -90,3 +90,9 @@
     justify-content: center;
     text-align: center;
 }
+
+.hero__slider-section {
+    background-image: url('img/hero/hero-1.jpg'); /* Cambia questo percorso con quello della tua immagine */
+    background-size: cover;
+    background-position: center;
+}
