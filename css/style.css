@@ -1141,11 +1141,6 @@ ol {
 .services__item {
   margin-bottom: 45px;
 }
-.services__item:hover .services__item__icon:after {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-}
 .services__item h4 {
   color: #ffffff;
   font-size: 22px;
@@ -1157,6 +1152,11 @@ ol {
   margin-bottom: 0;
 }
 
+/* .services__item:hover .services__item__icon:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
 .services__item__icon {
   position: relative;
   height: 70px;
@@ -1175,6 +1175,26 @@ ol {
   -webkit-transition: all, 0.5s;
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
+} */
+
+.services__item {
+  margin-bottom: 45px;
+}
+
+.services__item:hover .services__item__icon:after {
+  transform: rotate(45deg); /* Opzionale, se vuoi cambiare l'angolo di rotazione in hover */
+}
+
+.services__item h4 {
+  color: #fff; /* Sostituisci $white-color con il valore effettivo */
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 26px;
+  margin-bottom: 18px;
+}
+
+.services__item p {
+  margin-bottom: 0;
 }
 
 /*---------------------

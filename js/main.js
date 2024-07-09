@@ -174,7 +174,7 @@
             duration: 4000,
             easing: 'swing',
             step: function (now) {
-                $(this).text(Math.ceil(now));
+                $(this).text(Math.ceil(now)+"+");
             }
         });
     });
