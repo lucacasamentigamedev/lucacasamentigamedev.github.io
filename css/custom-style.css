@@ -73,7 +73,7 @@
 
 /* Rotazione continua in senso orario */
 .rotate-clockwise:after {
-    animation: rotate-clockwise 5s linear infinite;
+    animation: rotate-clockwise 3s linear infinite;
 }
 
 /* Rotazione continua in senso antiorario */
@@ -95,4 +95,116 @@
     background-image: url('img/hero/hero-1.jpg'); /* Cambia questo percorso con quello della tua immagine */
     background-size: cover;
     background-position: center;
+}
+
+/*set background carosel image bottom*/
+.bottom-bg {
+    background-position: bottom;
+}
+
+/*moving memorize*/
+
+@keyframes custom-movement {
+    0% {
+        transform: translateX(0) scale(1) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-10px) scale(1.1) rotate(-3deg);
+    }
+    50% {
+        transform: translateX(0) scale(1) rotate(0deg);
+    }
+    75% {
+        transform: translateX(10px) scale(1.1) rotate(3deg);
+    }
+    100% {
+        transform: translateX(0) scale(1) rotate(0deg);
+    }
+}
+
+.animate-text {
+    display: inline-block;
+    animation: custom-movement 7s ease-in-out infinite;
+}
+
+/*shake text*/
+
+.rotate-icon {
+    display: inline-block;
+}
+
+@keyframes shake1 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-5px, 5px);
+    }
+    50% {
+        transform: translate(5px, -5px);
+    }
+    75% {
+        transform: translate(-5px, -5px);
+    }
+}
+
+@keyframes shake2 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(5px, -5px);
+    }
+    50% {
+        transform: translate(-5px, 5px);
+    }
+    75% {
+        transform: translate(5px, 5px);
+    }
+}
+
+@keyframes shake3 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-5px, -5px);
+    }
+    50% {
+        transform: translate(5px, 5px);
+    }
+    75% {
+        transform: translate(-5px, 5px);
+    }
+}
+
+@keyframes shake4 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(5px, 5px);
+    }
+    50% {
+        transform: translate(-5px, -5px);
+    }
+    75% {
+        transform: translate(5px, -5px);
+    }
+}
+
+.shake1 {
+    animation: shake1 1s infinite;
+}
+
+.shake2 {
+    animation: shake2 1.5s infinite;
+}
+
+.shake3 {
+    animation: shake3 1.5s infinite;
+}
+
+.shake4 {
+    animation: shake4 2s infinite;
 }
