@@ -59,5 +59,25 @@
             observer.observe(icon);
         });
     });
+    
+    //carousel continue wait if click
+    $(document).ready(function(){
+        console.log('qui')
+        var owl = $('.hero__slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 5000, // 5 seconds
+            autoplayHoverPause: true
+        });
+
+        // Reset autoplay timeout on dot and nav button click
+        $('.owl-dot, .owl-prev, .owl-next').click(function() {
+            owl.trigger('stop.owl.autoplay');
+            owl.trigger('play.owl.autoplay', [5000]);
+        });
+    });
 
 })(jQuery);
