@@ -208,3 +208,15 @@
 .shake4 {
     animation: shake4 2s infinite;
 }
+
+/*portfolio*/
+
+.portfolio__item__video {
+    transition: opacity 0.15s ease;
+    cursor: pointer;
+}
+
+
+.portfolio__item__video:hover {
+    opacity: 0.1;
+}
