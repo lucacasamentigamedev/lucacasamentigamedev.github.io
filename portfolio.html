@@ -106,9 +106,9 @@
             </div>
             <div class="row portfolio__gallery">
 
-                <!--Beat Of Rebellion-->
+                <!-- Beat Of Rebellion -->
                 <div class="col-lg-4 col-md-6 col-sm-6 mix unreal">
-                    <div class="portfolio__item">
+                    <div class="portfolio__item portfolio-item-clickable" data-target="#beatOfRebellionModal">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/beat-of-rebellion.jpg">
                             <div class="overlay"></div>
                             <h4 class="overlay-text">Discover</h4>
@@ -125,16 +125,15 @@
                     </div>
                 </div>
 
-
-                <!--Fish & Kiss-->
+                <!-- Fish & Kiss -->
                 <div class="col-lg-4 col-md-6 col-sm-6 mix unreal">
-                    <div class="portfolio__item">
+                    <div class="portfolio__item portfolio-item-clickable" data-target="#fishAndKissModal">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/fish-&-kiss.jpg">
                             <div class="overlay"></div>
                             <h4 class="overlay-text">Discover</h4>
                         </div>
                         <div class="portfolio__item__text">
-                            <h4>Fish & Kiss</h4>
+                            <h4 class="overlay-title">Fish & Kiss</h4>
                             <ul>
                                 <li>Simulation</li>
                                 <li>Point & Click</li>
@@ -144,15 +143,15 @@
                     </div>
                 </div>
 
-                <!--Flesh Invader-->
+                <!-- Flesh Invader -->
                 <div class="col-lg-4 col-md-6 col-sm-6 mix unity">
-                    <div class="portfolio__item">
+                    <div class="portfolio__item portfolio-item-clickable" data-target="#fleshInvaderModal">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/flesh-invader/MainMenu.png">
                             <div class="overlay"></div>
                             <h4 class="overlay-text">Discover</h4>
                         </div>
                         <div class="portfolio__item__text">
-                            <h4>Flesh Invader</h4>
+                            <h4 class="overlay-title">Flesh Invader</h4>
                             <ul>
                                 <li>Bullet Hell</li>
                                 <li>Low Poly</li>
@@ -385,6 +384,75 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Seleziona tutti gli elementi con la classe 'portfolio-item-clickable'
+            const portfolioItems = document.querySelectorAll('.portfolio-item-clickable');
+            
+            // Aggiungi un gestore di eventi click a ciascun elemento
+            portfolioItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    const targetModalId = item.getAttribute('data-target');
+                    
+                    // Mostra la modale specifica
+                    $(targetModalId).modal('show');
+                });
+            });
+        });
+    </script>
+
+    <!-- Beat Of Rebellion Modal -->
+    <div class="modal fade" id="beatOfRebellionModal" tabindex="-1" aria-labelledby="beatOfRebellionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="beatOfRebellionModalLabel">Beat Of Rebellion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Hack & Slash, Action, Rhythm Game, Isometric</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fish & Kiss Modal -->
+    <div class="modal fade" id="fishAndKissModal" tabindex="-1" aria-labelledby="fishAndKissModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fishAndKissModalLabel">Fish & Kiss</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Simulation, Point & Click, 2.5D</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flesh Invader Modal -->
+    <div class="modal fade" id="fleshInvaderModal" tabindex="-1" aria-labelledby="fleshInvaderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fleshInvaderModalLabel">Flesh Invader</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Bullet Hell, Low Poly, Isometric</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
