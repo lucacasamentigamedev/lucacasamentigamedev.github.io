@@ -262,3 +262,20 @@
     z-index: 1;
     position: relative; /* Ensure it's positioned above the default stacking context */
 }
+
+.modal-title {
+    color: #ffffff;
+}
+
+.modal-subtitle, .modal-close-x {
+    color: #ffffff;
+}
+
+.modal-content {
+    padding: 20px;
+    background: #050f5f;
+}
+
+.modal-list-point {
+    color: #adadad;
+}
