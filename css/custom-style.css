@@ -271,9 +271,22 @@
     color: #ffffff;
 }
 
+.modal-subtitle-black, .modal-title-black, .modal-close-x-black{
+    color: black;
+}
+
 .modal-content {
     padding: 20px;
-    background: #050f5f;
+}
+
+.beat-of-rebellion-modal {
+    background: rgb(89,22,105);
+    background: linear-gradient(90deg, rgba(89,22,105,1) 0%, rgba(127,4,30,1) 60%);
+}
+
+.fish-and-kiss-modal{
+    background: rgb(30,135,251);
+    background: linear-gradient(135deg, rgba(30,135,251,1) 0%, pink 60%);
 }
 
 .modal-list-point {
