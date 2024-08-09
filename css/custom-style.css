@@ -286,7 +286,7 @@
 
 .fish-and-kiss-modal{
     background: rgb(30,135,251);
-    background: linear-gradient(135deg, rgba(30,135,251,1) 0%, pink 60%);
+    background: linear-gradient(135deg, rgba(30,135,251,1) 0%, rgb(255, 192, 203) 60%);
 }
 
 .modal-list-point {
