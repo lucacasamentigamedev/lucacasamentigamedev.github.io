@@ -280,13 +280,11 @@
 }
 
 .beat-of-rebellion-modal {
-    background: rgb(89,22,105);
     background: linear-gradient(90deg, rgba(89,22,105,1) 0%, rgba(127,4,30,1) 60%);
 }
 
-.fish-and-kiss-modal{
-    background: rgb(30,135,251);
-    background: linear-gradient(135deg, rgba(30,135,251,1) 0%, rgb(255, 192, 203) 60%);
+.fish-and-kiss-modal-pink-lightblue{
+    background: linear-gradient(135deg, black 0%, white 60%);
 }
 
 .modal-list-point {
