@@ -14,7 +14,6 @@
 
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    
 
     <!-- Stylesheets -->
     <link href="css/general.css" rel="stylesheet">
@@ -27,18 +26,16 @@
     <link href="css/portfolio.css" rel="stylesheet">
     <link href="css/banner.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-
+    
 </head>
 
     <!-- body -->
     <body data-spy="scroll" data-target=".navbar" data-offset="80">
 
-
         <!-- real image that bounce in the screen-->
         <div class="floating-img-wrapper">
             <img src="resources/hero/me.png" id="bouncing-img" alt="Hero Image" draggable="false">
         </div>
-
 
         <!-- Nav Bar -->
         <div id="navbar" class="navbar navbar-expand-lg bg-light navbar-light">
@@ -64,7 +61,6 @@
             </div>
         </div>
 
-
         <!-- Home -->
         <div class="home hero" id="home">
             <div class="container-fluid">
@@ -88,7 +84,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- About -->
         <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
@@ -141,7 +136,6 @@
                 </div>
             </div>
         </div>
-
         
         <!-- Skills -->
         <div class="skills" id="skills">
@@ -207,7 +201,6 @@
             </div>
         </div>
 
-        
         <!-- Experience -->
         <div class="experience" id="experience">
             <div class="container">
@@ -272,7 +265,6 @@
             </div>
         </div>
         
-        
         <!-- disabled Banner disabled for now -->
         <div style="display: none;" class="banner wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
@@ -288,7 +280,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- Portfolio -->
         <div class="portfolio" id="portfolio">
@@ -352,12 +343,14 @@
                                 <p class="modal-paragraph">3D, Hack & Slash, Action, Rhythm Game, Isometric</p>
                               
                                 <!-- YT trailer -->
-                                <iframe 
-                                  class="modal-video"
-                                  src="https://www.youtube.com/embed/Z-0TA3xB-lQ" 
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                  allowfullscreen
-                                ></iframe>
+                                <div class="trailer-container">
+                                    <iframe 
+                                      class="modal-video"
+                                      src="https://www.youtube.com/embed/Z-0TA3xB-lQ" 
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                      allowfullscreen>
+                                    </iframe>
+                                </div>
                               
                                 <!-- Game info -->
                                 <h4 class="modal-subtitle">Game info</h4>
@@ -517,7 +510,6 @@
             </div>
         </div>
 
-
         <!-- Footer -->
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
             <div class="container-fluid">
@@ -553,16 +545,16 @@
             </div>
         </div>
         
-        
         <!-- Back to top button -->
         <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-
         
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        
-        
+
+        <!-- Game developer / Web developer -->
+        <script src="lib/typed/typed.min.js"></script>
+
         <!-- Template Javascript -->
         <script src="js/hero.js"></script>
         <script src="js/general.js"></script>
@@ -574,7 +566,6 @@
         <script src="js/typed-init.js"></script>
         <script src="js/portfolio-filter.js"></script>
         <script src="js/portfolio-modal.js"></script>
-        
         
     </body>
 

@@ -222,11 +222,13 @@
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
 
   .modal-subtitle-first {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
   
   .modal-paragraph {
@@ -247,8 +249,8 @@
   }
   
   .modal-video {
-    width: 100%;
-    height: 50%;
+    width: 70%;
+    height: 100%;
     border-radius: 12px;
     border: none;
   }
@@ -261,6 +263,12 @@
     .portfolio-work-video {
       width: 50%;
     }
+  }
+
+  .trailer-container {
+    display: flex;
+    justify-content: center;
+    height: 50%;
   }
   
   
