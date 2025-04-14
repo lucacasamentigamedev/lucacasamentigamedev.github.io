@@ -1,585 +1,607 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Game developer website">
-    <meta name="keywords" content="Videogame, developer, programmer software, Unity, Unreal">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Luca Casamenti Game Dev</title>
+    <meta charset="utf-8">
+    <title>Luca Casamenti Game Developer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <!-- <link href="resources/favicon.ico" rel="icon">-->
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/custom-style.css" type="text/css">
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Stylesheets -->
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/hero.css" rel="stylesheet">
+    <link href="css/section-header.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/skills.css" rel="stylesheet">
+    <link href="css/experience.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/banner.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body>
+    <!-- body -->
+    <body data-spy="scroll" data-target=".navbar" data-offset="80">
 
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-    <!-- Page Preloder End -->
 
-    <!-- Header toolbar -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./portfolio.html">Portfolio</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <!-- <li><a href="./services.html">Services</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./about.html">About</a></li>
-                                        <li><a href="./portfolio.html">Portfolio</a></li>
-                                        <li><a href="./blog.html">Blog</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li> -->
-                                <li><a href="./contact.html">Contacts</a></li>
-                            </ul>
-                        </nav>
-                        <!-- <div class="header__nav__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div id="mobile-menu-wrap"></div>
+        <!-- real image that bounce in the screen-->
+        <div class="floating-img-wrapper">
+            <img src="resources/hero/me.png" id="bouncing-img" alt="Hero Image" draggable="false">
         </div>
-    </header>
-    <!-- Header toolbar End -->
 
-    <!-- Home Carousel -->
-    <section class="">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg bottom-bg" data-setbg="img/hero/fantasy-wallpaper5.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <h2>Passionate Game Developer</h2>
-                                <span>Graduated at <a href="https://www.aiv01.it/">AIV</a></span>
-                                <a href="#" class="primary-btn">See more about my work</a>
-                            </div>
-                        </div>
+
+        <!-- Nav Bar -->
+        <div id="navbar" class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <div id="logo-and-title-container">
+                    <a href="#home">
+                        <img id="navbar-logo" src="resources/logos/onlyRaccoon.png" alt="LC Logo">
+                    </a>
+                    <a href="#home" id="navbar-brand" class="navbar-brand">Luca Casamenti</a>
+                </div>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto align-items-center">
+                        <a id="nav-home" href="#home" class="nav-item nav-item-red nav-link active">Home</a>
+                        <a id="nav-about" href="#about" class="nav-item nav-item-blue nav-link">About</a>
+                        <a id="nav-skills" href="#skills" class="nav-item nav-item-red nav-link">Skills</a>
+                        <a id="nav-experience" href="#experience" class="nav-item nav-item-blue nav-link">Experience</a>
+                        <a id="nav-portfolio" href="#portfolio" class="nav-item nav-item-red nav-link">Portfolio</a>
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg bottom-bg" data-setbg="img/hero/fantasy-wallpaper4.jpg">
-                <div class="container">
-                    <div class="row carousel-slide-container-center">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <h2>Specialized in Unreal and Unity</h2>
-                                <span>Knowledge in FMOD and GameMaker</span>
-                                <a href="#" class="primary-btn">Discover my projects</a>
+        </div>
+
+
+        <!-- Home -->
+        <div class="home hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p>I'm</p>
+                                <h1>Luca Casamenti</h1>
+                                <h2></h2>
+                                <div class="typed-text">Game Developer, Web Developer</div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg bottom-bg" data-setbg="img/hero/fantasy-wallpaper2.jpg">
-                <div class="container">
-                    <div class="row carousel-slide-container-right">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <h2>Full - Stack Web Dev</h2>
-                                <span>Since 2019</span>
-                                <a href="#" class="primary-btn">About me</a>
-                            </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <!-- Hided image placeholder-->
+                        <div class="hero-image" id="original-image-wrapper" style="opacity: 0; pointer-events: none;">
+                            <img src="resources/hero/me.png" alt="Hero Image" id="original-img" draggable="false">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Home Carousel End -->
 
-    <!-- Get to know me -->
-    <section class="services spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="services__title">
-                        <div class="section-title">
-                            <!-- <span>Our services</span> -->
-                            <h2>Get to know me</h2>
+
+        <!-- About -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="resources/about/me-wall.png" alt="Image">
                         </div>
-                        <p>After a three-year degree in engineering and computer science and several years as a web developer, from October 2022, following enrollment in the programming course at AIV, I dedicate myself entirely to the design, study and development of video games.</p>
-                        <a href="#" class="primary-btn">Portfolio</a>
                     </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon rotate-clockwise">
-                                    <img style="max-width: 70%;" src="img/icons/si-1.png" alt="">
-                                </div>
-                                <h4>Unreal</h4>
-                                <p>I have developed multiple Blueprints and Systems to solve encountered problems in the best possible way. I had the opportunity to integrate and use the FMOD plugin within Unreal</p>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Learn About Me</p>
+                                <h2><span id="counter-years">0</span>+ Years of Programming</h2>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img style="max-width: 70%;" src="img/icons/si-2.png" alt="">
-                                </div>
-                                <h4>Unity</h4>
-                                <p>I developed a couple of school projects and learned the basic principles of a good project. I used the UI toolkit easily thanks to my web experience.</p>
+                            <div class="about-text">
+                                <p>
+                                    After graduating in <a class="blue-bold-glitch-sentence">Engineering and Computer Science</a> in Cesena in 2017, I worked for several years as a
+                                    <a class="red-bold-glitch-sentence">full stack developer</a> (mainly front-end).
+                                    Since October 2022, combining my strong passion for video games and computer science,
+                                    I decided to attend the video game-oriented programming course in Milan at
+                                    <a class="blue-bold-glitch-sentence" href="https://www.aiv01.it/" target="_blank">AIV - Accademia Italiana Videogiochi.</a>
+                                    <br><br>
+                                    During the years at the academy I participated in the development of several projects from 0 using <a class="red-bold-glitch-sentence">Unity</a> and <a class="blue-bold-glitch-sentence">Unreal</a>,
+                                    taking advantage of the main <a class="red-bold-glitch-sentence">design patterns</a> of the trade and avoiding the main <a class="blue-bold-glitch-sentence">mistakes</a> that can be made.
+                                    This path allowed me to delve deeper into the <a class="red-bold-glitch-sentence">C</a>, <a class="red-bold-glitch-sentence">C#</a>, <a class="red-bold-glitch-sentence">C++</a> and <a class="blue-bold-glitch-sentence">Python</a> languages,
+                                    as well as taking additional courses on <a class="red-bold-glitch-sentence">VFX</a> and <a class="blue-bold-glitch-sentence">UI/UX</a> design.
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img style="max-width: 70%;" src="img/icons/si-4.png" alt="">
-                                </div>
-                                <h4>Full-Stack Web dev</h4>
-                                <p>From 2019 to today I have always worked as a Web Developer, acquiring strong knowledge mainly on the front-end (Angular, javascript, typescript, HTML, CSS, etc.) but also on the back-end when needed (SQL, api, C#, Node.js, etc).</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon rotate-counterclockwise">
-                                    <img style="max-width: 70%;" src="img/icons/si-3.png" alt="">
-                                </div>
-                                <h4>Other knowledge</h4>
-                                <p>I know quite well FMOD and how to integrate it on Unreal and Unity. I also did a small project in GameMaker. Soon I plan to gain knowledge about Shaders, Materials, VFX and Godot.</p>
+                            <div class="about-social text-center mt-4">
+                                <a class="about-social-red" href="https://github.com/lucacasamentigamedev" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a class="about-social-red" href="https://www.linkedin.com/in/luca-casamenti-505a001b8/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a class="about-social-red" href="https://www.instagram.com/lucacasamentigamedev/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="about-social-red" href="https://www.youtube.com/@lucacasamentigamedev" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a class="about-social-red" href="https://www.tiktok.com/@lucacasamentigamedev" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Get to know me End -->
 
-    <!-- Images -->
-    <!-- <section class="work">
-        <div class="work__gallery">
-            <div class="grid-sizer"></div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
+        
+        <!-- Skills -->
+        <div class="skills" id="skills">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My knowledge</p>
+                    <h2>Skills</h2>
                 </div>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-3.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item large__item set-bg" data-setbg="img/work/work-4.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-5.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-6.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Images End -->
-
-    <!-- Counters -->
-    <section class="counter" id="counterSection">
-        <div class="container">
-            <div class="counter__content">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="" class="rotate-icon">
-                                <h2 class="counter_num">4</h2>
-                                <p>Projects</p>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="skills-item skills-item-blue">
+                            <div class="skills-icon skills-icon-border-blue">
+                                <img src="resources/logos/unreal.png" alt="Custom Icon" class="custom-skill-icon rotate-cw">
+                            </div>
+                            <div class="skills-text">
+                                <h3>Unreal</h3>
+                                <p>
+                                    I developed multiple Blueprints and Systems to solve encountered problems in the best possible way.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="" class="rotate-icon">
-                                <h2 class="counter_num">10</h2>
-                                <p>Years of programming</p>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="skills-item skills-item-red">
+                            <div class="skills-icon skills-icon-border-red">
+                                <img src="resources/logos/unity.png" alt="Custom Icon" class="custom-skill-icon rotate-ccw">
+                            </div>
+                            <div class="skills-text">
+                                <h3>Unity</h3>
+                                <p>
+                                    I developed some projects and learned the basic principles of a good project (Prefabs, Composition, Pooling, ecc ).
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="" class="rotate-icon">
-                                <h2 class="counter_num">6</h2>
-                                <p>Known programming languages</p>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="skills-item skills-item-red">
+                            <div class="skills-icon skills-icon-border-red">
+                                <img src="resources/logos/angular.png" alt="Custom Icon" class="custom-skill-icon rotate-ccw">
+                            </div>
+                            <div class="skills-text">
+                                <h3>Full-Stack Web dev</h3>
+                                <p>
+                                    I worked as a Web Developer for several years, acquiring strong knowledge of Angular, javascript, typescript, HTML, CSS, SQL, Node.js, etc.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="" class="rotate-icon">
-                                <h2 class="counter_num">3</h2>
-                                <p>Known Engines</p>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="skills-item skills-item-blue">
+                            <div class="skills-icon skills-icon-border-blue">
+                                <img src="resources/logos/other.png" alt="Custom Icon" class="custom-skill-icon rotate-cw">
+                            </div>
+                            <div class="skills-text">
+                                <h3>Other knowledge</h3>
+                                <p>
+                                    I know quite well FMOD and how to integrate it on Unreal and Unity. I made some material and VFX in my spare time.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Counters End -->
 
-    <!-- Team Section -->
-    <!-- <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title team__title">
-                        <span>Nice to meet</span>
-                        <h2>OUR Team</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+        
+         <!-- Experience -->
+        <div class="experience" id="experience">
+            <div class="container">
+                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Career</p>
+                    <h2>Working Experience</h2>
+                </header>
+                <div class="timeline">
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text card-shadow-no-left">
+                            <div class="timeline-date blue-sentence-bold">2022 - present</div>
+                            <div class="timeline-logo">
+                                <a href="https://www.aiv01.it" target="_blank" rel="noopener noreferrer">
+                                    <img src="resources/working-experience/aiv-logo.png" alt="AIV Logo" />
+                                </a>
                             </div>
+                            <h2>Programming Student</h2>
+                            <h4>AIV srl, Milano, MI</h4>
+                            <p>
+                                Over my three-year journey at AIV, I built a strong foundation in game programming, with a focus on design patterns, best practices,
+                                and problem-solving. I deepened my knowledge of C#, C++, Python, and game engines like Unity and Unreal, working on AI systems, physics,
+                                UI, and audio integration. Currently, I'm advancing in C++ and multithreading, and exploring Computer Graphics.
+                                This experience has shaped a solid workflow and a professional approach to game development.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="img/team/team-2.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text card-shadow-no-right">
+                            <div class="timeline-date blue-sentence-bold">2023 - present</div>
+                            <div class="timeline-logo">
+                                <a href="https://www.nolpal.it" target="_blank" rel="noopener noreferrer">
+                                    <img src="resources/working-experience/nolpal-logo.png" alt="Nolpal Logo" />
+                                </a>
                             </div>
+                            <h2>Web Developer</h2>
+                            <h4>Nolpal Srl, Cesena, FC</h4>
+                            <p>
+                                Design and development of new B2B applications or parts of them, as well as the improvement of existing applications,
+                                both front-end and back-end. Main stack: Angular (17+), .NET Framework, DNN.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="img/team/team-3.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text card-shadow-no-left">
+                            <div class="timeline-date blue-sentence-bold">2019 - 2023</div>
+                            <div class="timeline-logo">
+                                <a href="https://inobeta.it/" target="_blank" rel="noopener noreferrer">
+                                    <img src="resources/working-experience/inobeta-logo.png" alt="Inobeta Logo" />
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--four set-bg" data-setbg="img/team/team-4.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 p-0">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn">Meet Our Team</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Team Section End -->
-
-    <!-- Latest Blog Section Begin -->
-    <!-- <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <span>Our Blog</span>
-                        <h2>Blog Update</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="latest__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
+                            <h2>Web Developer</h2>
+                            <h4>Inobeta s.r.l.s., Forlì, FC</h4>
+                            <p>
+                                Collaboration in the design and development of multiple custom web applications in Agile methodology.
+                                Core technology stack: Angular (front end) and Node.js (back end). In some cases, Vue.js, C++ or Wordpress was used.
+                                Collaboration in the management and improvement of the company's Linkedin profile and in relationships with customers
+                                (posts, commercial campaigns via chat, email or telephone)
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- Latest Blog Section End -->
-
-    <!-- Call To Action Section -->
-    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
-        <div class="container">
-            <div class="row motivational-sentence">
-                <div class="col-lg-8">
-                    <div class="callto__text">
-                        <h2>Got it memorized?</h2>
-                        <!-- <p>Axel - Kingdom Hearts</p> -->
-                        <!-- <a href="#">Start your stories</a> -->
-                    </div>
-                    <div style="color: white;">Axel - KH</div>
+        
+        
+        <!-- Banner disabled for now -->
+        <div style="display: none;" class="banner wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Reasonable Price</p>
+                    <h2>Get A <span>Special</span> Price</h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                    </p>
+                    <a class="btn">Pricing Plan</a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Call To Action Section End -->
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <!-- <div class="footer__top">
+
+        <!-- Portfolio -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+
+                <!-- Titles -->
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Works</p>
+                    <h2>My Portfolio</h2>
+                </div>
+
+                <!-- Categories -->
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-unreal">Unreal</li>
+                            <li data-filter=".filter-unity">Unity</li>
+                            <li data-filter=".filter-graphic-and-vfx">Materials & VFX</li>
+                            <li data-filter=".filter-prototypes">Prototypes</li>
+                        </ul>
                     </div>
                 </div>
-            </div> -->
-            <div class="footer__option">
-                <div class="row footer-container" style="gap: 30px; justify-content: center; text-align: center;">
-                    <a href="./index.html">Home</a>
-                    <a href="./portfolio.html">Portfolio</a>
-                    <a href="./about.html">About</a>
-                    <a href="#">Contacts</a>
-                    <!-- <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+
+                <div class="row portfolio-container">
+
+                    <!------------------------------------------Beat Of Rebellion------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unreal" onclick="openModal()">
+                        <div class="portfolio-wrap portfolio-item-clickable">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/beat-of-rebellion/cover.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Beat Of Rebellion</h3>
+                            </div>
                         </div>
-                    </div> -->
-                    <!-- <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Sections</h5>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Our work</h5>
-                            <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Contacts</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">
-                            Copyright © 2024 Luca Casamenti. All rights reserved | This template was sourced from <i class="fa fa-heart-o"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> and customized by Luca Casamenti
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
+
+                    <!-- modal -->
+                    <div id="modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Beat Of Rebellion</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal()">✕</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <!-- Type -->
+                                <h4 class="modal-subtitle-first">Type</h4>
+                                <p class="modal-paragraph">3D, Hack & Slash, Action, Rhythm Game, Isometric</p>
+                              
+                                <!-- YT trailer -->
+                                <iframe 
+                                  class="modal-video"
+                                  src="https://www.youtube.com/embed/Z-0TA3xB-lQ" 
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                  allowfullscreen
+                                ></iframe>
+                              
+                                <!-- Game info -->
+                                <h4 class="modal-subtitle">Game info</h4>
+                                <ul class="modal-list">
+                                  <li><strong>Period:</strong> 2023 - today</li>
+                                  <li><strong>Engine:</strong> Unreal Engine</li>
+                                  <li><strong>Status:</strong> In progress</li>
+                                </ul>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph">
+                                    A young musician lives in a dystopian cyberpunk city where all artistic disciplines such as music, theater, dance, literary arts,
+                                    media arts, and visual arts are forbidden, because they distract humans from working efficiency and prevent
+                                    them from being productive, disciplined and strict. In such a society that values only the common good in a twisted way,
+                                    artists are considered a system mistake and branded as criminals; the young musician has to fight the authorities to
+                                    affirm his freedom and to spread the importance of music and emotions to all of society.
+                                </p>
+                              
+                                <!-- What I've done -->
+                                <h4 class="modal-subtitle">What I've Done in the Game</h4>
+                                <ul class="modal-list-indented">
+                                    <!-- Player -->
+                                    <li>
+                                      Developed many Main Character systems and mechanics like:
+                                      <ul class="modal-list-indented">
+                                        <!-- Dash -->
+                                        <li>
+                                            Dash (on floor and in air, on beat) with camera FOV manipulation <br>
+                                            <video class="portfolio-work-video" autoplay muted loop playsinline>
+                                                <source src="resources/portfolio/beat-of-rebellion/dash.mp4" type="video/mp4">
+                                            </video>
+                                        </li>
+                                        <!-- ABP -->
+                                        <li> Animation Blueprint with different animation preset (dash & combat) based on zone maps</li>
+                                        <!-- Behind Walls -->
+                                        <li>
+                                            Player Behind Wall highlight <br>
+                                            <video class="portfolio-work-video" autoplay muted loop playsinline>
+                                                <source src="resources/portfolio/beat-of-rebellion/behind-walls.mp4" type="video/mp4">
+                                            </video>
+                                        </li>
+                                        <!-- Buffer -->
+                                        <li>
+                                            Circular buffer of 4 notes under player that every attack collect a note (green or red base on beat input) and
+                                            when full cast a more powerful attack or a melody, if unlocked
+                                            <br><video class="portfolio-work-video" autoplay muted loop playsinline>
+                                                <source src="resources/portfolio/beat-of-rebellion/buffer.mp4" type="video/mp4">
+                                            </video>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <!-- Music -->
+                                    <li>
+                                        As regards the musical component i've realized:
+                                        <ul class="modal-list-indented">
+                                            <!-- FMOD -->
+                                            <li>
+                                                FMOD integration with Unreal plugin creating an Audio Manager blueprint for play one shot or background sound,
+                                                this lasts can blend from explore to combat and reverse with in-game event or map triggers. With the help of plugin
+                                                i've extracted the beat event to permit to every actor or system to pulse or to do something on beat 
+                                            </li>
+                                            <!-- Metronome -->
+                                            <li> The Metronome blueprint for the core mechanic to determine if the player is in sync with the beat or note</li>
+                                            <!-- Simon Says -->
+                                            <li>
+                                                A Simon Says mini-game where the player has to repeat
+                                                the sequenceof notes played by the game on beat
+                                                <br><video class="portfolio-work-video" autoplay muted loop playsinline>
+                                                    <source src="resources/portfolio/beat-of-rebellion/simon-says.mp4" type="video/mp4">
+                                                </video>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- Other -->
+                                    <li>
+                                        Combat camera in fight that adapts fov based on the proximity to enemies
+                                        <br><video class="portfolio-work-video" autoplay muted loop playsinline>
+                                            <source src="resources/portfolio/beat-of-rebellion/dynamic-camera.mp4" type="video/mp4">
+                                        </video>
+                                    </li>
+                                    <li> A system that counts the time it takes the player to complete an arena, stopping when there are dialogues and when the game is paused </li>
+                                    <li> A Debug Log system to print log based on category, colors, time on screen, ecc</li>
+                                    <li> Contributed to numerous other developments and minor fixes or features including UI, widgets, design or whatever the project needed</li>
+                                  </ul>
+                              </div>
+                              
+                              
+                        </div>
+                      </div>
+
+
+                    <!------------------------------------------Fish & Kiss------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unreal">
+                        <div class="portfolio-wrap" data-modal-content-id="project-fish-and-kiss">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/fish-and-kiss/cover.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Fish & Kiss</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="project-fish-and-kiss" class="modal-template" style="display: none;">
+                        Fish & Kiss
+                    </div>
+
+                    <!------------------------------------------Bubble Rush------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unity">
+                        <div class="portfolio-wrap" data-modal-content-id="project-bubble-rush">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/bubble-rush/cover.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Bubble Rush</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="project-bubble-rush" class="modal-template" style="display: none;">
+                        Bubble Rush
+                    </div>
+
+                    <!------------------------------------------Flesh Invader------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unity">
+                        <div class="portfolio-wrap" data-modal-content-id="project-flesh-invader">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/flesh-invader/cover.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Flesh Invader</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="project-flesh-invader" class="modal-template" style="display: none;">
+                        Flesh Invader
+                    </div>
+
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer Section End -->
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/custom.js"></script>
-</body>
 
+        <!-- Footer -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Luca Casamenti Game & Web developer</h2>
+                        <div class="footer-menu">
+                            <p>+39 348 2203780</p>
+                            <p>luca.casamenti.gamedev@gmail.com</p>
+                        </div>
+                        <div id="footer-icon-container">
+                            <a class="footer-icon" href="https://github.com/lucacasamentigamedev" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a class="footer-icon" href="https://www.linkedin.com/in/luca-casamenti-505a001b8/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a class="footer-icon" href="https://www.instagram.com/lucacasamentigamedev/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="footer-icon" href="https://www.youtube.com/@lucacasamentigamedev" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a class="footer-icon" href="https://www.tiktok.com/@lucacasamentigamedev" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p>&copy; Copyright © 2025 Luca Casamenti. All rights reserved | This template was sourced from <a href="https://themewagon.com/" target="_blank" rel="noopener noreferrer">themewagon</a> and customized by Luca Casamenti</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <!-- WOW.js rimosso -->
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/hero.js"></script>
+        <script src="js/general.js"></script>
+        <script src="js/about.js"></script>
+        <script src="js/skills.js"></script>
+        <script src="js/loader.js"></script>
+        <script src="js/back-to-top.js"></script>
+        <script src="js/sticky-navbar.js"></script>
+        <script src="js/typed-init.js"></script>
+        <script src="js/portfolio-filter.js"></script>
+        <script src="js/portfolio-modal.js"></script>
+        
+        
+    </body>
 </html>
+
+<!-- Modal Portfolio-->
+<div id="projectModal" class="project-modal" style="display: none;">
+    <div class="project-modal-content">
+        <div>
+            <div class="close-modal">&times;</div>
+        </div>
+        <div class="project-details"></div>
+    </div>
+</div>

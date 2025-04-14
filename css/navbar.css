@@ -1,0 +1,166 @@
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        border-bottom: 1px dashed rgba(256, 256, 256, .2);
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #ffffff !important;
+    }
+    
+    #nav-portfolio, #nav-experience {
+        width: 100px;
+    }
+
+    #nav-skills, #nav-about, #nav-home {
+        width: 70px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: white;
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #414141;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-item-blue:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-item-blue.active {
+        color: rgb(35 44 239 / 90%);
+    }
+
+    .navbar-light.nav-sticky .navbar-nav .nav-item-red:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-item-red.active {
+        color: rgba(239, 35, 60, .95);
+    }
+}
+
+@media (max-width: 991.98px) {  
+    
+
+    #navbar-brand {
+        display: none;
+    }
+
+    .navbar {
+        padding: 15px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+#logo-and-title-container 
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#navbar-logo {
+    width: 60px;
+    height: auto;
+}
+
+#navbar {
+    z-index: 11;
+}
+
+
+
+
+/* Navbar CSS color*/
+
+.navbar .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar.nav-sticky .navbar-brand {
+    color: #414141;
+}
+
+/* Navbar logo raccoon jump*/
+
+#navbar-logo:hover {
+    animation: bounce 0.15s alternate 2;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
