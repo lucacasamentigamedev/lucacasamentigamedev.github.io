@@ -165,6 +165,10 @@
   padding: 20px;
 }
 
+#video-modal-portolio-template{
+  z-index: 1500;
+}
+
 .modal-box {
   background: white;
   width: 90vw;
@@ -241,6 +245,12 @@
   padding-left: 0;
 }
 
+.modal-info-list
+{
+  list-style: none;
+  padding-left: 0;
+}
+
 .modal-list li {
   margin-bottom: 0.5rem;
 }
@@ -281,11 +291,17 @@
   align-items: center;
 }
 
-.modal-subtitle-game-info {
-  text-align: left;
+.modal-info-block {
+  width: 30%;
+  align-self: start;
 }
 
 @media (max-width: 768px) {
+
+  .modal-info-block {
+    width: 100%;
+  }
+
   .modal-info-container {
     gap: 0;
   }
@@ -293,13 +309,44 @@
   .trailer-container {
     width: 100%;
   }
+
+  .modal-info-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .modal-video {
+    width: 100%;
+  }
+
+  .modal-info-block {
+    width: 100%;
+  }
 }
 
-.modal-info-block {
-  width: 30%;
-  align-self: start;
-}
+
 
 .italic-sentence {
   font-style: italic;
+}
+
+#video-modal {
+  width: 100%;
+  padding: 5px 20px 20px 20px;
+  border-radius: 50px;
+}
+
+.video-modal-header {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 20px;
+}
+
+.video-modal-box {
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }

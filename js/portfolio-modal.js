@@ -17,10 +17,3 @@ function closeModal(modalId) {
         console.error(`Modal with id "${modalId}" not found.`);
     }
 }
-
-function openVideoInModal(videoSrc) {
-    console.log('Opening video in modal:', videoSrc);
-    const modalVideo = document.getElementById('modalVideo');
-    modalVideo.src = videoSrc;
-    openModal('videoModal');
-}
