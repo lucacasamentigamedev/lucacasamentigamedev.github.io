@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: center; /* centra orizzontalmente */
     background: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.50);
     cursor: pointer; /* cambia il cursore su tutta l’area */
 }
 
@@ -154,143 +154,152 @@
 /**** modale */
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    padding: 20px;
-  }
-  
-  .modal-box {
-    background: white;
-    width: 90vw;
-    height: 90vh;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  
-  .modal-header {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .modal-title {
-    flex: 0 0 90%;
-    text-align: center;
-  }
-  
-  .modal-title h2 {
-    margin: 0;
-    margin-left: 10%;
-  }
-  
-  .modal-close {
-    flex: 0 0 10%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .close-button {
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .modal-body {
-    flex: 1 1 auto;
-    overflow-y: auto;
-    padding: 40px;
-  }
-  
-  .hidden {
-    display: none !important;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
 
-  .modal-subtitle {
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
+.modal-box {
+  background: white;
+  width: 90vw;
+  height: 90vh;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
-  .modal-subtitle-first {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-  
-  .modal-paragraph {
-    margin-bottom: 1rem;
-    text-align: center;
-    text-align: justify;
-  }
-  
-  .modal-list {
-    text-align: left;
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .modal-list li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .modal-list-indented {
-    padding-left: 1rem;
-  }
-  
-  .modal-video {
-    width: 70%;
-    height: 100%;
-    border-radius: 12px;
-    border: none;
-  }
+.modal-header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
 
+.modal-title {
+  flex: 0 0 90%;
+  text-align: center;
+}
+
+.modal-title h2 {
+  margin: 0;
+  margin-left: 10%;
+}
+
+.modal-close {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 40px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal-subtitle {
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.modal-subtitle-first {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.modal-paragraph {
+  margin-bottom: 1rem;
+  text-align: center;
+  text-align: justify;
+}
+
+.modal-list {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-list li {
+  margin-bottom: 0.5rem;
+}
+
+.modal-list-indented {
+  padding-left: 1rem;
+}
+
+.modal-video {
+  width: 70%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
+}
+
+.portfolio-work-video {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
   .portfolio-work-video {
-    width: 100%;
+    width: 50%;
   }
-  
-  @media (min-width: 768px) {
-    .portfolio-work-video {
-      width: 50%;
-    }
+}
+
+.trailer-container {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.modal-info-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+.modal-subtitle-game-info {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .modal-info-container {
+    gap: 0;
   }
 
   .trailer-container {
-    display: flex;
-    justify-content: center;
-    height: 50%;
+    width: 100%;
   }
+}
 
-  .modal-info-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .modal-subtitle-game-info {
-    text-align: left;
-  }
-  
-  @media (max-width: 768px) {
-    .modal-info-container {
-      gap: 0;
-    }
-  
-    .trailer-container {
-      width: 100%;
-    }
-  }
+.modal-info-block {
+  width: 30%;
+  align-self: start;
+}
+
+.italic-sentence {
+  font-style: italic;
+}
