@@ -354,7 +354,7 @@
                                     <!-- Type -->
                                     <div class="modal-info-block">
                                       <h4 class="modal-subtitle ">Type</h4>
-                                      <p class="modal-paragraph">
+                                      <p class="modal-paragraph modal-paragraph-type">
                                           3D, Hack & Slash, Action, Rhythm Game, Isometric
                                         </p>
                                     </div>
@@ -451,7 +451,6 @@
                         </div>
                     </div>
 
-
                     <!------------------------------------------Fish & Kiss------------------------------------------>
 
                     <!--card-->
@@ -475,124 +474,74 @@
                             <!-- Title and close -->
                             <div class="modal-header">
                                 <div class="modal-title">
-                                  <h2>Fish & Kiss</h2>
+                                  <h2>Fish & Kiss (Global Game Jam 2024)</h2>
                                 </div>
                                 <div class="modal-close">
-                                  <button class="close-button" onclick="closeModal()">✕</button>
+                                  <button class="close-button" onclick="closeModal('fish-and-kiss-modal')">✖</button>
                                 </div>
                             </div>
 
-                            <div class="modal-body">
+                            <div class="modal-body" >
 
                                 <!-- YT trailer -->
                                 <div class="trailer-container">
                                     <iframe 
                                       class="modal-video"
-                                      src="https://www.youtube.com/watch?v=xjZLpb6w9Aw" 
+                                      src="https://www.youtube.com/embed/xjZLpb6w9Aw?si=E6ULiZu4magFkGhQ" 
                                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                       allowfullscreen>
                                     </iframe>
                                 </div>
 
                                 <!-- Type & Game info -->
-                                <div class="modal-info-container">
+                                <div class="modal-info-container" style="flex-direction: column; gap: unset;">
                                     <!-- Type -->
-                                    <div class="modal-info-block">
-                                      <h4 class="modal-subtitle ">Type</h4>
-                                      <p class="modal-paragraph">
-                                          3D, Hack & Slash, Action, Rhythm Game, Isometric
+                                    <div class="modal-info-block" style="align-self: center">
+                                        <h4 class="modal-subtitle ">Type</h4>
+                                        <p class="modal-paragraph modal-paragraph-type">
+                                            2.5D, Simulation, Point & Click
                                         </p>
                                     </div>
                                     <!-- Game info -->
-                                    <div class="modal-info-block">
-                                      <h4 class="modal-subtitle modal-subtitle-game-info">Game info</h4>
-                                      <ul class="modal-list">
-                                        <li><strong>Period:</strong> 2023 - today </li>
-                                        <li><strong>Engine:</strong> Unreal Engine 5.4</li>
-                                        <li><strong>Status:</strong> In progress </li>
-                                      </ul>
+                                    <div>
+                                        <h4 class="modal-subtitle modal-subtitle-game-info">Game Jam info</h4>
+                                        <ul class="modal-info-list">
+                                            <li><strong>Jam:</strong> Global Game Jam 2024, AIV - Accademia Italiana Videogiochi cluster</li>
+                                            <li><strong>Event Dates:</strong> 22/01/2024, 15:00 - 28/01/2024, 23:00</li>
+                                            <li><strong>Engine:</strong> Unreal Engine</li>
+                                            <li><strong>Status:</strong> Finished</li>
+                                            <li><strong>Languages:</strong> English</li>
+                                            <li><strong>Theme:</strong> Make Me Laugh</li>
+                                            <li><strong>Jam Game Page:</strong> <a href="https://globalgamejam.org/games/2024/fish-kiss-6" target="_blank">https://globalgamejam.org/games/2024/fish-kiss-6</a></li>
+                                            <li><strong>Repo:</strong> <a href="https://github.com/lucacasamentigamedev/Fish-And-Kiss" target="_blank">https://github.com/lucacasamentigamedev/Fish-And-Kiss</a></li>
+                                            <li><strong>Itch.io:</strong> <a href="https://lucacasamentigamedev.itch.io/fishandkiss" target="_blank">https://lucacasamentigamedev.itch.io/fishandkiss</a></li>
+                                            <li><strong>Other:</strong> The game won the awards for best game and craziest game</li>
+                                          </ul>
+                                          
                                     </div>
+
+                                    <!-- Description -->
+                                    <h4 class="modal-subtitle">Description</h4>
+                                    <p class="modal-paragraph">
+                                        "Fish & Kiss" is a simulation, point & click game where you matchmake for fish using a dating app called Finder.
+                                        You browse fish profiles, pick one, and catch it. Then, you decorate a room for your dinner date with furniture
+                                        that matches the fish's tastes. During the date, you choose the right dialogue options.
+                                        If it goes well, the fish becomes a trophy in your aquarium.
+                                    </p>
+                                
+                                    <!-- What I've done -->
+                                    <h4 class="modal-subtitle">What I've done in the Game</h4>
+
+                                    <ul class="what-ive-done-list">
+                                        <li> Integration of musical elements</li>
+                                        <li> implementation of most of widgets</li>
+                                        <li> Mesh outline highlits when mouse-over</li>
+                                        <li> participated in any decisions regarding where to find data, how to get it, interfaces and whatever the project required in the time allowed</li>
+                                    </ul>
+
                                   </div>
-                              
-                                <!-- Description -->
-                                <h4 class="modal-subtitle">Description</h4>
-                                <p class="modal-paragraph">
-                                    A young musician lives in a dystopian cyberpunk city where all artistic disciplines such as music, theater, dance, literary arts,
-                                    media arts, and visual arts are forbidden, because they distract humans from working efficiency and prevent
-                                    them from being productive, disciplined and strict. In such a society that values only the common good in a twisted way,
-                                    artists are considered a system mistake and branded as criminals; the young musician has to fight the authorities to
-                                    affirm his freedom and to spread the importance of music and emotions to all of society.
-                                </p>
-                              
-                                <!-- What I've done -->
-                                <h4 class="modal-subtitle">What I've Done in the Game</h4>
+                                </div>
 
-                                <p class="italic-sentence">All systems are realized by Blueprints</p>
-
-                                <!-- Player -->
-                                <h4>Main Character</h4>
-                                <ul>
-                                    <!-- Dash -->
-                                    <li>
-                                        Dash (on floor and in air, on beat) with camera FOV manipulation <br>
-                                        <video class="portfolio-work-video" autoplay muted loop playsinline>
-                                            <source src="resources/portfolio/beat-of-rebellion/dash.mp4" type="video/mp4">
-                                        </video>
-                                    </li>
-                                    <!-- ABP -->
-                                    <li> Animation Blueprint with different animation preset (dash & combat) based on zone maps</li>
-                                    <!-- Behind Walls -->
-                                    <li>
-                                        Player Behind Wall highlight <br>
-                                        <video class="portfolio-work-video" autoplay muted loop playsinline>
-                                            <source src="resources/portfolio/beat-of-rebellion/behind-walls.mp4" type="video/mp4">
-                                        </video>
-                                    </li>
-                                    <!-- Buffer -->
-                                    <li>
-                                        Circular buffer of 4 notes under player that every attack collect a note (green or red base on beat input) and
-                                        when full cast a more powerful attack or a melody, if unlocked
-                                        <br><video class="portfolio-work-video" autoplay muted loop playsinline>
-                                            <source src="resources/portfolio/beat-of-rebellion/buffer.mp4" type="video/mp4">
-                                        </video>
-                                    </li>
-                                </ul>
-
-                                <!-- Music -->
-                                <h4>Music</h4>
-                                <ul>
-                                    <!-- FMOD -->
-                                    <li>
-                                        FMOD integration with Unreal plugin creating an Audio Manager blueprint for play one shot or background sound,
-                                        this lasts can blend from explore to combat and reverse with in-game event or map triggers. With the help of plugin
-                                        i've extracted the beat event to permit to every actor or system to pulse or to do something on beat 
-                                    </li>
-                                    <!-- Metronome -->
-                                    <li> The Metronome blueprint for the core mechanic to determine if the player is in sync with the beat or note</li>
-                                    <!-- Simon Says -->
-                                    <li>
-                                        A Simon Says mini-game where the player has to repeat
-                                        the sequenceof notes played by the game on beat
-                                        <br><video class="portfolio-work-video" autoplay muted loop playsinline>
-                                            <source src="resources/portfolio/beat-of-rebellion/simon-says.mp4" type="video/mp4">
-                                        </video>
-                                    </li>
-                                </ul>
-
-                                <!-- Other -->
-                                <h4>And more</h4>
-                                <ul>
-                                    <li>
-                                        Combat camera in fight that adapts fov based on the proximity to enemies
-                                        <br><video class="portfolio-work-video" autoplay muted loop playsinline>
-                                            <source src="resources/portfolio/beat-of-rebellion/dynamic-camera.mp4" type="video/mp4">
-                                        </video>
-                                    </li>
-                                    <li> A system that counts the time it takes the player to complete an arena, stopping when there are dialogues and when the game is paused </li>
-                                    <li> A Debug Log system to print log based on category, colors, time on screen, ecc</li>
-                                    <li> Contributed to numerous other developments and minor fixes or features including UI, widgets, design or whatever the project needed</li>
-                                </ul>
-                            </div>
                               
                         </div>
                     </div>
@@ -613,11 +562,6 @@
                         </div>
                     </div>
 
-                    <!-- modal -->
-                    <div id="project-bubble-rush" class="modal-template" style="display: none;">
-                        Bubble Rush
-                    </div>
-
                     <!------------------------------------------Flesh Invader------------------------------------------>
 
                     <!--card-->
@@ -632,11 +576,6 @@
                                 <h3>Flesh Invader</h3>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- modal -->
-                    <div id="project-flesh-invader" class="modal-template" style="display: none;">
-                        Flesh Invader
                     </div>
 
                 </div>

@@ -350,3 +350,12 @@
   flex-direction: column;
   overflow: hidden;
 }
+
+.modal-paragraph-type {
+  text-align: center;
+}
+
+.what-ive-done-list {
+  text-align: left;
+  width: 100%;
+}
