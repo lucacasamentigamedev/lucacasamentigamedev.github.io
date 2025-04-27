@@ -348,18 +348,26 @@
                                     </iframe>
                                 </div>
 
-                                <!-- Type -->
-                                <h4 class="modal-subtitle">Type</h4>
-                                <p class="modal-paragraph">3D, Hack & Slash, Action, Rhythm Game, Isometric</p>
-                              
-                              
-                                <!-- Game info -->
-                                <h4 class="modal-subtitle">Game info</h4>
-                                <ul class="modal-list">
-                                  <li><strong>Period:</strong> 2023 - today</li>
-                                  <li><strong>Engine:</strong> Unreal Engine</li>
-                                  <li><strong>Status:</strong> In progress</li>
-                                </ul>
+
+                                <!-- Type & Game info -->
+                                <div class="modal-info-container">
+                                    <!-- Type -->
+                                    <div class="modal-info-block">
+                                      <h4 class="modal-subtitle">Type</h4>
+                                      <p class="modal-paragraph">
+                                          3D, Hack & Slash, Action, Rhythm Game, Isometric
+                                        </p>
+                                    </div>
+                                    <!-- Game info -->
+                                    <div class="modal-info-block">
+                                      <h4 class="modal-subtitle modal-subtitle-game-info">Game info</h4>
+                                      <ul class="modal-list">
+                                        <li><strong>Period:</strong> 2023 - today </li>
+                                        <li><strong>Engine:</strong> Unreal Engine 5.4</li>
+                                        <li><strong>Status:</strong> In progress </li>
+                                      </ul>
+                                    </div>
+                                  </div>
                               
                                 <!-- Description -->
                                 <h4 class="modal-subtitle">Description</h4>
@@ -373,68 +381,60 @@
                               
                                 <!-- What I've done -->
                                 <h4 class="modal-subtitle">What I've Done in the Game</h4>
-                                <ul class="modal-list-indented">
 
-                                    
-                                    <!-- Player -->
-                                    <h4>Main Character</h4>
+                                <!-- Player -->
+                                <h4>Main Character</h4>
+                                <ul>
+                                    <!-- Dash -->
                                     <li>
-                                      Developed many Main Character systems and mechanics like:
-                                      <ul class="modal-list-indented">
-                                        <!-- Dash -->
-                                        <li>
-                                            Dash (on floor and in air, on beat) with camera FOV manipulation <br>
-                                            <video class="portfolio-work-video" autoplay muted loop playsinline>
-                                                <source src="resources/portfolio/beat-of-rebellion/dash.mp4" type="video/mp4">
-                                            </video>
-                                        </li>
-                                        <!-- ABP -->
-                                        <li> Animation Blueprint with different animation preset (dash & combat) based on zone maps</li>
-                                        <!-- Behind Walls -->
-                                        <li>
-                                            Player Behind Wall highlight <br>
-                                            <video class="portfolio-work-video" autoplay muted loop playsinline>
-                                                <source src="resources/portfolio/beat-of-rebellion/behind-walls.mp4" type="video/mp4">
-                                            </video>
-                                        </li>
-                                        <!-- Buffer -->
-                                        <li>
-                                            Circular buffer of 4 notes under player that every attack collect a note (green or red base on beat input) and
-                                            when full cast a more powerful attack or a melody, if unlocked
-                                            <br><video class="portfolio-work-video" autoplay muted loop playsinline>
-                                                <source src="resources/portfolio/beat-of-rebellion/buffer.mp4" type="video/mp4">
-                                            </video>
-                                        </li>
-                                      </ul>
+                                        Dash (on floor and in air, on beat) with camera FOV manipulation <br>
+                                        <video class="portfolio-work-video" autoplay muted loop playsinline>
+                                            <source src="resources/portfolio/beat-of-rebellion/dash.mp4" type="video/mp4">
+                                        </video>
                                     </li>
-
-                                    
-                                    <!-- Music -->
-                                    <h4>Music</h4>
+                                    <!-- ABP -->
+                                    <li> Animation Blueprint with different animation preset (dash & combat) based on zone maps</li>
+                                    <!-- Behind Walls -->
                                     <li>
-                                        As regards the musical component i've realized:
-                                        <ul class="modal-list-indented">
-                                            <!-- FMOD -->
-                                            <li>
-                                                FMOD integration with Unreal plugin creating an Audio Manager blueprint for play one shot or background sound,
-                                                this lasts can blend from explore to combat and reverse with in-game event or map triggers. With the help of plugin
-                                                i've extracted the beat event to permit to every actor or system to pulse or to do something on beat 
-                                            </li>
-                                            <!-- Metronome -->
-                                            <li> The Metronome blueprint for the core mechanic to determine if the player is in sync with the beat or note</li>
-                                            <!-- Simon Says -->
-                                            <li>
-                                                A Simon Says mini-game where the player has to repeat
-                                                the sequenceof notes played by the game on beat
-                                                <br><video class="portfolio-work-video" autoplay muted loop playsinline>
-                                                    <source src="resources/portfolio/beat-of-rebellion/simon-says.mp4" type="video/mp4">
-                                                </video>
-                                            </li>
-                                        </ul>
+                                        Player Behind Wall highlight <br>
+                                        <video class="portfolio-work-video" autoplay muted loop playsinline>
+                                            <source src="resources/portfolio/beat-of-rebellion/behind-walls.mp4" type="video/mp4">
+                                        </video>
                                     </li>
+                                    <!-- Buffer -->
+                                    <li>
+                                        Circular buffer of 4 notes under player that every attack collect a note (green or red base on beat input) and
+                                        when full cast a more powerful attack or a melody, if unlocked
+                                        <br><video class="portfolio-work-video" autoplay muted loop playsinline>
+                                            <source src="resources/portfolio/beat-of-rebellion/buffer.mp4" type="video/mp4">
+                                        </video>
+                                    </li>
+                                </ul>
 
-                                    <!-- Other -->
-                                    <h4>And more</h4>
+                                <!-- Music -->
+                                <h4>Music</h4>
+                                <ul>
+                                    <!-- FMOD -->
+                                    <li>
+                                        FMOD integration with Unreal plugin creating an Audio Manager blueprint for play one shot or background sound,
+                                        this lasts can blend from explore to combat and reverse with in-game event or map triggers. With the help of plugin
+                                        i've extracted the beat event to permit to every actor or system to pulse or to do something on beat 
+                                    </li>
+                                    <!-- Metronome -->
+                                    <li> The Metronome blueprint for the core mechanic to determine if the player is in sync with the beat or note</li>
+                                    <!-- Simon Says -->
+                                    <li>
+                                        A Simon Says mini-game where the player has to repeat
+                                        the sequenceof notes played by the game on beat
+                                        <br><video class="portfolio-work-video" autoplay muted loop playsinline>
+                                            <source src="resources/portfolio/beat-of-rebellion/simon-says.mp4" type="video/mp4">
+                                        </video>
+                                    </li>
+                                </ul>
+
+                                <!-- Other -->
+                                <h4>And more</h4>
+                                <ul>
                                     <li>
                                         Combat camera in fight that adapts fov based on the proximity to enemies
                                         <br><video class="portfolio-work-video" autoplay muted loop playsinline>
@@ -444,9 +444,8 @@
                                     <li> A system that counts the time it takes the player to complete an arena, stopping when there are dialogues and when the game is paused </li>
                                     <li> A Debug Log system to print log based on category, colors, time on screen, ecc</li>
                                     <li> Contributed to numerous other developments and minor fixes or features including UI, widgets, design or whatever the project needed</li>
-                                  </ul>
-                              </div>
-                              
+                                </ul>
+                            </div>
                               
                         </div>
                       </div>
