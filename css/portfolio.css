@@ -359,3 +359,24 @@
   text-align: left;
   width: 100%;
 }
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-gallery img {
+  width: 70%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
