@@ -239,6 +239,12 @@
   text-align: justify;
 }
 
+.modal-paragraph-centered {
+  margin-bottom: 1rem;
+  text-align: center !important;
+  text-align: justify;
+}
+
 .modal-list {
   text-align: left;
   list-style: none;
@@ -320,8 +326,8 @@
     width: 100%;
   }
 
-  .modal-info-block {
-    width: 100%;
+  .modal-info-block, .video-centered-container-video {
+    width: 100% !important;
   }
 }
 
@@ -379,4 +385,14 @@
 
 .image-gallery img:hover {
   transform: scale(1.05);
+}
+
+.video-centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-centered-container-video {
+  width: 70%;
 }

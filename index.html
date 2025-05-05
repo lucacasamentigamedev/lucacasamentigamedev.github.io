@@ -299,13 +299,15 @@
                             <li data-filter="*" class="filter-active">All</li>
                             <li data-filter=".filter-unreal">Unreal</li>
                             <li data-filter=".filter-unity">Unity</li>
-                            <li data-filter=".filter-graphic-and-vfx">Materials & VFX</li>
+                            <li data-filter=".filter-materials-and-vfx">Materials & VFX</li>
                             <li data-filter=".filter-prototypes">Prototypes</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="row portfolio-container">
+
+                    <!------------------------------------------Unreal------------------------------------------>
 
                     <!------------------------------------------Beat Of Rebellion------------------------------------------>
 
@@ -455,7 +457,7 @@
 
                     <!--card-->
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unreal" onclick="openModal('fish-and-kiss-modal')">
-                        <div class="portfolio-wrap" data-modal-content-id="project-fish-and-kiss">
+                        <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <video autoplay muted loop playsinline>
                                     <source src="resources/portfolio/fish-and-kiss/cover.mp4" type="video/mp4">
@@ -551,11 +553,13 @@
                         </div>
                     </div>
 
+                    <!------------------------------------------Unity------------------------------------------>
+
                     <!------------------------------------------Bubble Rush------------------------------------------>
 
                     <!--card-->
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unity" onclick="openModal('bubble-rush-modal')">
-                        <div class="portfolio-wrap" data-modal-content-id="project-bubble-rush">
+                        <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <video autoplay muted loop playsinline>
                                     <source src="resources/portfolio/bubble-rush/cover.mp4" type="video/mp4">
@@ -650,7 +654,7 @@
 
                     <!--card-->
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unity" onclick="openModal('flesh-invader-modal')">
-                        <div class="portfolio-wrap" data-modal-content-id="project-flesh-invader">
+                        <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <video autoplay muted loop playsinline>
                                     <source src="resources/portfolio/flesh-invader/cover.mp4" type="video/mp4">
@@ -729,9 +733,595 @@
                             </div>
                               
                         </div>
+                        </div>
                     </div>
 
-                </div>
+                    <!------------------------------------------Prototypes------------------------------------------>
+
+                    <!------------------------------------------Floating ship------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('prototypes-floating-ship-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/prototypes/prot-floating-ship.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Floating ship</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="prototypes-floating-ship-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Floating ship</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('prototypes-floating-ship-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/prototypes/prot-floating-ship.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A floating ship simulate mechanic where a trigger placed above the water checks the objects that 
+                                    are inside it and apply a force to them based on the object mass and volume and water density.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Push & pull force------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('prototypes-push-and-pull-force-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/prototypes/prot-push-and-pull-force.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Push & pull force</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="prototypes-push-and-pull-force-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Push & pull force</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('prototypes-push-and-pull-force-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/prototypes/prot-push-and-pull-force.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A Star-Wars-like push & pull force mechanic that lets you control the movement of selected objects by attracting or pushing them away,
+                                    one by one. The attraction mechanic uses a spherecast in the forward vector that if crosses an object starts pulling it
+                                    towars you. The object follows the camera point of view until you push it towards the direction that you are looking at.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Materials & VFX------------------------------------------>
+
+                    <!------------------------------------------Materials------------------------------------------>
+
+                    <!------------------------------------------Glass------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-glass-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/materials/mat-glass.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Glass</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-glass-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Glass</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-glass-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/materials/mat-glass.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A simple glass material.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Texture Projection------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-texture-projection-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/materials/mat-texture-projection.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Texture projection</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-texture-projection-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Texture projection</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-texture-projection-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/materials/mat-texture-projection.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A texture projection material the project a texture on a mesh based on the camera position.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Lava------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-lava-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/materials/mat-lava.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Lava</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-lava-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Lava</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-lava-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/materials/mat-lava.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A Lava material that simulate lava flow using various textures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Lavalamp------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-lava-lamp-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/materials/mat-lava-lamp.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Lava lamp</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-lava-lamp-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Lava lamp</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-lava-lamp-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/materials/mat-lava-lamp.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A Lava material that simulate lava lamp flow.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------VFX------------------------------------------>
+
+                    <!------------------------------------------Cinetic lines------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-cinetic-lines-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/vfx/vfx-clines.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Cinetic Lines</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-cinetic-lines-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Cinetic lines</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-cinetic-lines-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/vfx/vfx-clines.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A VFX to show cinetic stylized lines when player runs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Flipbook fire------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-flipbook-fire-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/vfx/vfx-fire.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Flipbook fire</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-flipbook-fire-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Flipbook fire</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-flipbook-fire-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/vfx/vfx-fire.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A VFX fire made through flipbook animation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Short circuit------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-short-circuit-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/vfx/vfx-scircuit.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Short circuit</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-short-circuit-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Short circuit</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-short-circuit-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/vfx/vfx-scircuit.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A VFX effect that simulate an electric short circuit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Flipbook smoke------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-flipbook-smoke-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/vfx/vfx-smoke.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Flipbook smoke</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-flipbook-smoke-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Flipbook smoke</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-flipbook-smoke-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/vfx/vfx-smoke.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A VFX effect that simulate a column of smoke using flipbook.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Curling stars------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-curling-stars-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/vfx/vfx-stars.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Curling stars</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-curling-stars-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Curling stars</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-curling-stars-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/vfx/vfx-stars.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A VFX effect made by using mainly curling noise module.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Smoke trail------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('materials-and-vfx-smoke-trail-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/vfx/vfx-trail.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Smoke trail</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="materials-and-vfx-smoke-trail-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Smoke trail</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('materials-and-vfx-smoke-trail-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/vfx/vfx-trail.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    A VFX effect that create a simple smoke trail behind player when runs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
 
