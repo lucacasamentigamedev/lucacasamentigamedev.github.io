@@ -299,8 +299,9 @@
                             <li data-filter="*" class="filter-active">All</li>
                             <li data-filter=".filter-unreal">Unreal</li>
                             <li data-filter=".filter-unity">Unity</li>
-                            <li data-filter=".filter-materials-and-vfx">Materials & VFX</li>
                             <li data-filter=".filter-prototypes">Prototypes</li>
+                            <li data-filter=".filter-tools">Tools</li>
+                            <li data-filter=".filter-materials-and-vfx">Materials & VFX</li>
                         </ul>
                     </div>
                 </div>
@@ -741,7 +742,7 @@
                     <!------------------------------------------Floating ship------------------------------------------>
 
                     <!--card-->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('prototypes-floating-ship-modal')">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-prototypes" onclick="openModal('prototypes-floating-ship-modal')">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <video autoplay muted loop playsinline>
@@ -790,7 +791,7 @@
                     <!------------------------------------------Push & pull force------------------------------------------>
 
                     <!--card-->
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-materials-and-vfx" onclick="openModal('prototypes-push-and-pull-force-modal')">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-prototypes" onclick="openModal('prototypes-push-and-pull-force-modal')">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
                                 <video autoplay muted loop playsinline>
@@ -832,6 +833,56 @@
                                     A Star-Wars-like push & pull force mechanic that lets you control the movement of selected objects by attracting or pushing them away,
                                     one by one. The attraction mechanic uses a spherecast in the forward vector that if crosses an object starts pulling it
                                     towars you. The object follows the camera point of view until you push it towards the direction that you are looking at.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------Tools------------------------------------------>
+
+                    <!------------------------------------------Spline instantiator------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-tools" onclick="openModal('tools-spline-inst-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <video autoplay muted loop playsinline>
+                                    <source src="resources/portfolio/tools/tool-spline-inst.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Spline instantiator</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="tools-spline-inst-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Spline instantiator</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('tools-spline-inst-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/prototypes/prot-push-and-pull-force.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    An Unreal Engine tool written in C++ that generates a specified number of duplicates of a chosen actor along a scene spline.
                                 </p>
                             </div>
                         </div>
@@ -1046,7 +1097,7 @@
                                 </video>
                             </div>
                             <div class="portfolio-text">
-                                <h3>Cinetic Lines</h3>
+                                <h3>Cinetic lines</h3>
                             </div>
                         </div>
                     </div>
