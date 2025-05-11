@@ -144,3 +144,7 @@
     display: flex;
     justify-content: center;
 }
+
+.footer-menu {
+    flex-wrap: wrap;
+}
