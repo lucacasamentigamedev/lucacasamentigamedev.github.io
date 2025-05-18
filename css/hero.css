@@ -157,6 +157,10 @@
         padding: 8px 10px;
         letter-spacing: 0;
     }
+
+    .floating-img-wrapper {
+        display: none;
+    }
 }
 
 /*******************************/
@@ -182,4 +186,9 @@
 
 .hero .hero-image img {
     max-width: 80%;
+}
+
+#bouncing-img {
+    opacity: 0;
+    transition: opacity 5s; /* Optional per fade-in elegante */
 }
