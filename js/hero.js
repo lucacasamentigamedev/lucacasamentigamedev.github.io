@@ -12,7 +12,6 @@ const img = document.querySelector("#bouncing-img");
 // === INITIAL POSITIONING ON LOAD ===
 // Positions the bouncing image to match the original hidden image
 window.addEventListener("load", () => {
-    console.log("Window loaded");
     const reference = document.querySelector("#original-img");
     const rect = reference.getBoundingClientRect();
 
@@ -30,7 +29,6 @@ window.addEventListener("load", () => {
 // === HANDLE RESIZE ===
 // Recalculates the position of the bouncing image when window is resized
 function repositionFloatingImage() {
-    console.log("repositionFloatingImage")
     const reference = document.querySelector("#original-img");
     const wrapper = document.querySelector(".floating-img-wrapper");
 
