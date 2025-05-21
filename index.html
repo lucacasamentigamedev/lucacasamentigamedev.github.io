@@ -328,8 +328,21 @@
                     <!--card-->
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unreal" onclick="openModal('beat-of-rebellion-modal')">
                         <div class="portfolio-wrap portfolio-item-clickable">
-                            <div class="portfolio-img">
-                                <video autoplay muted loop playsinline>
+                            <div class="portfolio-img" style="position: relative;">
+                                <!-- Poster -->
+                                <img 
+                                    src="resources/portfolio/beat-of-rebellion/poster.png" 
+                                    alt="Beat Of Rebellion Poster" 
+                                    class="portfolio-video-poster">
+
+                                <!-- Video -->
+                                <video 
+                                    class="portfolio-video-cover" 
+                                    autoplay 
+                                    muted 
+                                    loop 
+                                    playsinline 
+                                    preload="auto">
                                     <source src="resources/portfolio/beat-of-rebellion/cover.mp4" type="video/mp4">
                                 </video>
                             </div>
@@ -1294,6 +1307,7 @@
         <script src="js/back-to-top.js"></script>
         <script src="js/sticky-navbar.js"></script>
         <script src="js/typed-init.js"></script>
+        <script src="js/portfolio.js"></script>
         <script src="js/portfolio-filter.js"></script>
         <script src="js/portfolio-modal.js"></script>
         

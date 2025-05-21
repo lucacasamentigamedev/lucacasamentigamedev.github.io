@@ -62,19 +62,6 @@
 }
 
 
-.portfolio .portfolio-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio .portfolio-img img {
-    position: relative;
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    transform: scale(1.1);
-    transition: .5s;
-}
 
 .portfolio .portfolio-item:hover img {
     transform: none;
@@ -92,6 +79,7 @@
     background: #ffffff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.50);
     cursor: pointer; /* cambia il cursore su tutta l’area */
+    z-index: 10;
 }
 
 .portfolio .portfolio-text h3 {
@@ -121,28 +109,6 @@
     background: transparent;
     box-shadow: inset 0 0 0 0 #EF233C;
     border-color: #EF233C;
-}
-
-.portfolio-img {
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-.portfolio-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.portfolio-img video {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
 }
 
 /* Fade in animation */
@@ -395,4 +361,58 @@
 
 .video-centered-container-video {
   width: 70%;
+}
+
+
+
+
+
+
+/* CONTENITORE IMMAGINE E VIDEO */
+.portfolio-img {
+    position: relative;
+    width: 100%;
+    height: 220px; /* Altezza fissa uniforme */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* VIDEO */
+.portfolio-video-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+}
+
+/* POSTER */
+.portfolio-video-poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: opacity 3s ease; 
+    z-index: 5;
+  }
+
+/* IMMAGINI STATICHE USATE IN ALTRE CARD (NON POSTER) */
+.portfolio .portfolio-img img:not(.portfolio-video-poster) {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    transform: scale(1.1);}
+
+/* VIDEO STANDARD (non usato se già hai .portfolio-video-cover) */
+.portfolio-img video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
