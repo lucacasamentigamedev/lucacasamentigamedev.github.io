@@ -1107,6 +1107,69 @@
                         </div>
                     </div>
 
+                    <!------------------------------------------Aim Assist------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-prototypes" onclick="openModal('prototypes-aim-assist-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img" style="position: relative;">
+                                <!-- Poster -->
+                                <img 
+                                    src="resources/portfolio/loading.png" 
+                                    alt="Loading screen" 
+                                    class="portfolio-video-poster">
+
+                                <!-- Video -->
+                                <video 
+                                    class="portfolio-video-cover" 
+                                    autoplay 
+                                    muted 
+                                    loop 
+                                    playsinline 
+                                    preload="auto">
+                                    <source src="resources/portfolio/prototypes/prot-aim-assist.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Prot: Aim Assist</h3>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="prototypes-aim-assist-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Prototype: Aim Assist</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('prototypes-aim-assist-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/prototypes/prot-aim-assist.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    Aim assist mechanic in Unreal that helps players aim more accurately when looking near an enemy target.
+                                    It uses a collision sphere around enemies to detect proximity then leverages the dot product to identify the best target in front of the player.
+                                    Finally, the system rotates the camera on the Y and Z axes to align with the target’s center
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <!------------------------------------------Tools------------------------------------------>
 
                     <!------------------------------------------Spline Instantiator------------------------------------------>
