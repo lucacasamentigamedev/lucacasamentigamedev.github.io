@@ -802,6 +802,69 @@
 
                     <!------------------------------------------Prototypes------------------------------------------>
 
+                    <!------------------------------------------Parry------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-prototypes" onclick="openModal('prototypes-parry-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img" style="position: relative;">
+                                <!-- Poster -->
+                                <img 
+                                    src="resources/portfolio/loading.png" 
+                                    alt="Loading screen" 
+                                    class="portfolio-video-poster">
+
+                                <!-- Video -->
+                                <video 
+                                    class="portfolio-video-cover" 
+                                    autoplay 
+                                    muted 
+                                    loop 
+                                    playsinline 
+                                    preload="auto">
+                                    <source src="resources/portfolio/prototypes/prot-parry.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Prot: Parry</h3>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="prototypes-parry-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>Prototype: Parry</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('prototypes-parry-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/prototypes/prot-parry.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                              
+                                <!-- Description -->
+                                <h4 class="modal-subtitle">Description</h4>
+                                <p class="modal-paragraph-centered">
+                                    This Unreal Engine prototype demonstrates a parry mechanic where, during enemy attacks,
+                                    a short parry window allows the player to stun the enemy with precise timing.
+                                    These parry windows are driven by animation events, ensuring synchronization with enemy attack motions.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <!------------------------------------------Flight Simulator------------------------------------------>
 
                     <!--card-->
