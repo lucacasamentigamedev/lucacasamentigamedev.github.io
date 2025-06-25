@@ -696,11 +696,8 @@
                                         <li> Created system to quickly configure game buttons from editor with default & highlighted sprite and behavior </li>
                                         <li> Integrated FMOD plugin and created an AudioManager to integrate and manage all game audio (background and one shot) </li>
                                     </ul>
-
-                                  </div>
                                 </div>
-
-                              
+                            </div>
                         </div>
                     </div>
 
@@ -800,6 +797,83 @@
                             </div>
                               
                         </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------------VxV project ------------------------------------------>
+
+                    <!--card-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-unity" onclick="openModal('vxv-project-modal')">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img" style="position: relative;">
+                                <!-- Poster -->
+                                <img 
+                                    src="resources/portfolio/loading.png" 
+                                    alt="Loading screen" 
+                                    class="portfolio-video-poster">
+
+                                <!-- Video -->
+                                <video 
+                                    class="portfolio-video-cover" 
+                                    autoplay 
+                                    muted 
+                                    loop 
+                                    playsinline 
+                                    preload="auto">
+                                    <source src="resources/portfolio/unity/vxv-project/cover.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>VxV project</h3>
+                        </div>
+                    </div>
+
+                    <!-- modal -->
+                    <div id="vxv-project-modal" class="modal hidden">
+                        <div class="modal-box">
+
+                            <!-- Title and close -->
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                  <h2>VxV project</h2>
+                                </div>
+                                <div class="modal-close">
+                                  <button class="close-button" onclick="closeModal('vxv-project-modal')">✖</button>
+                                </div>
+                            </div>
+
+                            <div class="modal-body" >
+
+                                <!-- Video -->
+                                <div class="video-centered-container">
+                                    <video class="video-centered-container-video" autoplay muted loop playsinline controls>
+                                        <source src="resources/portfolio/unity/vxv-project/cover.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <!-- Type & Game info -->
+                                <div class="modal-info-container" style="flex-direction: column; gap: unset;">
+                                    <!-- Game info -->
+                                    <div>
+                                        <h4 class="modal-subtitle modal-subtitle-game-info">Project info</h4>
+                                        <ul class="modal-info-list">
+                                            <li><strong>Type:</strong> 3D Showcase for <a href="https://www.vxv-projectsrl.it/" target="_blank">VxV project</a></li>
+                                            <li><strong>Engine:</strong> Unity 2022.3</li>
+                                            <li><strong>Status:</strong> Finished</li>
+                                            <li><strong>Repo:</strong> <a href="https://github.com/lucacasamentigamedev/VxVproject" target="_blank">https://github.com/lucacasamentigamedev/VxVproject</a></li>
+                                          </ul>
+                                          
+                                    </div>
+
+                                    <!-- Description -->
+                                    <h4 class="modal-subtitle">Description</h4>
+                                    <p class="modal-paragraph">
+                                        This is a raw 3D showcase of a self-supporting shelter designed for parking lot installations. The scene was built in <strong>Unity</strong> to visualize the structure in a real-time environment,
+                                        then exported using <strong>WebGL</strong> and hosted via <strong>GitHub Pages</strong>. The goal is to provide an interactive product demo directly in the browser, allowing viewers to explore the modelwith no downloads needed.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
