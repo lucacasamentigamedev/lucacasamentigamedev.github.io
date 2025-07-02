@@ -161,6 +161,10 @@
     .floating-img-wrapper {
         display: none;
     }
+
+    #dont-launch-my-image {
+        display: none;
+    }
 }
 
 /*******************************/
